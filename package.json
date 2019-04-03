@@ -18,7 +18,8 @@
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^8.0.0",
-    "vue-rx": "^6.1.0"
+    "vue-rx": "^6.1.0",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
@@ -36,7 +37,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "express": "^4.16.4",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "ts-jest": "^23.0.0",
