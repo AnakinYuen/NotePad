@@ -1,11 +1,18 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Icon />
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Icon from "./components/Icon.vue";
 
-@Component
+@Component<App>({
+  components: {
+    Icon,
+  },
+})
 export default class App extends Vue {}
 </script>
 
@@ -17,7 +24,11 @@ export default class App extends Vue {}
 }
 
 body {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
+  height: 100vh;
 }
 </style>
