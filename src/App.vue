@@ -24,11 +24,32 @@ export default class App extends Vue {}
 }
 
 body {
-  display: flex;
+  $bg-color: rgba(0, 0, 0, 0.5);
+
   justify-content: center;
   align-items: center;
 
+  display: flex;
+
   width: 100vw;
   height: 100vh;
+
+  background-position: 0 0, 1px 1px;
+  background-size: 2px 2px;
+  background-color: #fff;
+  background-image: linear-gradient(
+      45deg,
+      $bg-color 25%,
+      transparent 25%,
+      transparent 75%,
+      $bg-color 75%
+    ),
+    linear-gradient(
+      45deg,
+      $bg-color 25%,
+      transparent 25%,
+      transparent 75%,
+      $bg-color 75%
+    );
 }
 </style>
