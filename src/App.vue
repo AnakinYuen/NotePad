@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <Icon />
+    <NotePad class="app__note-pad" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Icon from "./components/Icon.vue";
+import NotePad from "./components/NotePad.vue";
 
 @Component<App>({
   components: {
     Icon,
-  },
+    NotePad
+  }
 })
 export default class App extends Vue {}
 </script>
@@ -21,15 +23,12 @@ export default class App extends Vue {}
 
 * {
   box-sizing: border-box;
+
+  font-family: "Lucida Grande";
 }
 
 body {
   $bg-color: rgba(0, 0, 0, 0.5);
-
-  justify-content: center;
-  align-items: center;
-
-  display: flex;
 
   width: 100vw;
   height: 100vh;
@@ -51,5 +50,12 @@ body {
       transparent 75%,
       $bg-color 75%
     );
+}
+
+.app {
+  &__note-pad {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
 </style>
