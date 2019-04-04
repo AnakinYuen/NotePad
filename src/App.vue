@@ -20,11 +20,12 @@ export default class App extends Vue {}
 
 <style lang="scss">
 @import "~normalize.css";
+@import "./assets/font/ChicagoFLF/index.css";
 
 * {
   box-sizing: border-box;
 
-  font-family: "Lucida Grande";
+  font-family: ChicagoFLF;
 }
 
 body {
